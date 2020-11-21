@@ -1,0 +1,37 @@
+  Functions are the basics of c programming used to take a series of code and organize it. During this
+assignment milestone 1 and 2, the main object was to create an organized code with header files. However,
+the use of the functions created functions is the "Helpers" files and have the main file pull out the 
+functions needed to perform the certain tasked that were called upon. Having the file called "contactsHelpers.c" 
+for all of the function, the arrangement was very helpful because when looking at the files of code, it was much easier
+to read and when it came to debugging it was much faster. Debugging would have been very difficult if this 
+was one file because of how unorganized and crowded it would have been. When calling a function in the "contacts.c", 
+it was an advantage because its unchallenging to look back at where you declared the function and what it has to do 
+so you can use it. For example, in contacts.c in the struct "getName" the functions were used when the middle name is
+asked because the user had an option if they want to enter a middle name. That is where the function "yes();" gets
+called. Instead of repeating the statement "while (!((lookover == '\n') && ((valid == 'Y') || (valid == 'y') || 
+(valid == 'n') || (valid== 'N'))))" over and over again the "yes();" function made it much less repetitive 
+and simpler because all you had to type was a "yes();" instead of a whole loop. The whole idea of of the function is to make 
+your series of code much more organized, readable, short and simple, less repetitive, and make debugging less complicated.
+Another example of where the function declaring and calling productive was in the contacts.c file in the struct "getAddress".
+This is when the function "getInt();" is called upon so the user has to input is a valid integer and this reduces the while loop
+and the "printf("*** OUT OF RANGE *** <Enter a number between %d and %d>: ", min, max);" being rewritten in each struct that 
+also need an integer check. 
+  The difference between the helper files and the contacts file and why they weren't all named the same was to indicate 
+that these files are helping the contacts.c file. When looking at contact.h, that is a file that just stores information about
+all of the struct and their variables. However the contacts.c file is where all of the use of functions, math, and all of the 
+structs are being called for. The helper files have store the all of the function and loops on the side so the contacts.c file can
+provide it to the main "a2ms2" file. It is kind of like a tower, each file relies on one another. The contacts.c file relies on the 
+helper files and the contacts.h file because it needs the structs, functions, and the information each file provides. However, the 
+main file relies on all of them for the information to print out to the user. Without the helper files in the mix, the functions and
+structs would be everywhere and although it is not impossible it would be insanely long and hard to touch up with the mistake. The
+helper file is the "help" of the whole program. Without them, the contact files would be extremely messy and repetitive with the
+loops. Looking at examples from the program, in "contacts.c" the "getAddress" struct called on a function which is "NUMBER = getInt();".
+Now when you look at the "getInt();" in the "contactsHelper.c" file the while function build on several different variables declaration,
+scanners, and a loop. This function in "contacts.c" is called for, 4 times and if you typed all of those mini tasks it would take up
+much space and time. The function the "contactsHelper.c" was written once and was easy to locate, and when calling for it the 
+function was called upon instead of writing each declaration, scanner, and loop over and over again.  
+  To conclude, this assignment not only brought up the use of functions and how to compartmentalize can be efficient and helpful but
+I was able to reuse the knowledge of transferring and organizing files to become more efficient for others. These two milestones helped 
+me accomplish and gain an understanding of how files can rely on each other and that can be very productive. To summarize, the functions 
+are used to become faster at locating, debugging, and using for certain tasks. Also, the helper files and very effective because 
+they make the main program more reliant on each other and easier to read. 
